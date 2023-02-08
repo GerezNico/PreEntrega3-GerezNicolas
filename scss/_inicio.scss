@@ -1,0 +1,53 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.form__letra {
+    color: $color-secundario;
+    border: solid $color-secundario;
+    width: 15rem;
+
+}
+
+.contacto__section {
+    margin: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.submit {
+    @extend .boton-comprar;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.textarea {
+    margin-top: 1rem;
+    width: 20rem;
+}
+
+@media (min-width: $tablet) {
+    .textarea {
+        margin-top: 1rem;
+        width: 40rem;
+    }
+}
+
+@media (min-width: $desktop) {
+    .textarea {
+        margin-top: 1rem;
+        width: 50rem;
+    }
+}
+
+.linea {
+    background-color: $color-secundario;
+    margin-top: 2rem;
+    height: 0.1rem;
+}

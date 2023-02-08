@@ -1,0 +1,41 @@
+.padre-cards {
+    @include flex-columna;
+    .card img {
+        max-height: 250px;
+    }
+}
+
+@media (min-width: $tablet) {
+    .padre-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (min-width: $desktop) {
+    .padre-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
+.card-body {
+    background-color:$color-primario;
+    color: $color-secundario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-comprar{
+    border: solid 1px $color-secundario;
+    background-color: $color-terciario;
+    color: $color-secundario;
+
+    &:hover{
+        color: $color-terciario;
+        background-color: $color-secundario;
+    }
+}

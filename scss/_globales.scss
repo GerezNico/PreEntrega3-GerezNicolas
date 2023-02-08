@@ -1,0 +1,98 @@
+body {
+    background-color: $color-primario;
+    font-family: $letraprincipal;
+    color: $color-secundario;
+}
+
+/*header*/
+@media (max-width: $mobile) {
+    .logo-debout-nav {
+        width: 300px;
+    }
+}
+
+.navbar-toggler {
+    background-color: $color-terciario;
+    border: solid $color-terciario;
+    
+}
+
+.nav-link{
+    color: $color-secundario;
+
+    &:hover{
+        color: $color-terciario;
+    }
+}
+
+.navbar-nav .nav-link.active {
+    color: $color-terciario;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: $color-terciario;
+}
+
+/*global*/
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: #808080;
+}
+
+.carousel-item img {
+    height: 250px;
+}
+
+@media (min-width: $tablet) {
+    .carousel-item img {
+        height: 70vh;
+    }
+}
+
+@media (min-width: $desktop) {
+    .carousel-item img {
+        height: 100vh;
+    }
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/*redes sociales*/
+.footer__redes{
+    margin-bottom: 3rem;
+}
+
+
+.redes img{
+    width: 5rem;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: $color-primario;
+}
+.hover-redes:hover {
+    transform: scale(1.2);
+}
+
+/*Tablets*/
+
+@media (min-width: 768px) {
+    .redes {
+        @include flex-redes-desk-tablets;
+    }
+}
+
+
+/*Desktop*/
+@media (min-width: 992px) {
+    .redes {
+        @include flex-redes-desk-tablets;
+    }
+}
