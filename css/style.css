@@ -35,6 +35,18 @@ body {
   background-color: rgb(19, 87, 54);
 }
 
+.dropdown-menu {
+  background-color: #181717;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.navbar-nav {
+  --bs-nav-link-hover-color: $color-terciario;
+}
+
 /*global*/
 .carousel-control-next-icon, .carousel-control-prev-icon {
   background-color: #808080;
@@ -189,6 +201,10 @@ h1, h2 {
 .boton-comprar:hover, .submit:hover {
   color: rgb(19, 87, 54);
   background-color: white;
+}
+
+.accesorio {
+  height: 250px;
 }
 
 /*# sourceMappingURL=style.css.map */

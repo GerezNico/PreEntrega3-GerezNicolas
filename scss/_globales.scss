@@ -33,6 +33,18 @@ body {
     background-color: $color-terciario;
 }
 
+.dropdown-menu {
+    background-color: #181717;
+}
+
+.dropdown-item {
+    color: white
+}
+
+.navbar-nav{
+    --bs-nav-link-hover-color: $color-terciario;
+}
+
 /*global*/
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
